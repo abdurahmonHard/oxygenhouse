@@ -1,0 +1,53 @@
+.sidebar-item {
+   transition: .3s;
+}
+
+.sidebar-item:hover {
+   background: #f3f3f3;
+}
+
+.sidebar-item:hover p {
+   color: dodgerblue;
+}
+
+.sidebar-item:hover svg {
+   color: dodgerblue;
+}
+
+.sidebar-item.active {
+   background: dodgerblue;
+}
+
+.sidebar-item.active p {
+   color: #fff;
+}
+
+.sidebar-item.active svg {
+   color: #fff;
+}
+
+.sidebar-active-bar {
+   position: absolute;
+   left: 120px;
+   top: 0;
+   width: 0px;
+   overflow: hidden;
+   height: 100%;
+   backdrop-filter: blur(5px);
+   box-shadow: 8px 0 5px -2px #d5d5d5;
+   background: #fff;
+   border-left: 2px solid transparent;
+   transition: .4s;
+   z-index: 1000;
+}
+
+.sidebar-active-bar.show {
+   width: 280px;
+   border-left: 2px solid #ddd;
+}
+
+@media screen and (max-width:640px) {
+   .sidebar-active-bar {
+      left: 70px;
+   }
+}

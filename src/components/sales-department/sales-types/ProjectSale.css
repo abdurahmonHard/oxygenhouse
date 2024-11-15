@@ -1,0 +1,27 @@
+.chessType {
+	transition: 0.3s all;
+	color: #fff;
+	background: transparent;
+	color: #1769c7;
+	border: 1px solid #1769c7;
+	border-radius: 5px;
+}
+
+.layerType {
+	transition: 0.3s all;
+	color: #fff;
+	background: transparent;
+	color: #1769c7;
+	border: 1px solid #1769c7;
+	border-radius: 5px;
+}
+
+.chessType.active {
+	background: #1769c7;
+	color: #fff;
+}
+
+.layerType.active {
+	background: #1769c7;
+	color: #fff;
+}
